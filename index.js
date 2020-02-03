@@ -29,10 +29,10 @@ const serial = new SerialPort(setup.port, {baudRate: setup.rate}, function (err)
 // MQTT subscriber (MQTT --> serial)
 mqttClient.on('connect', function () {
 
-	countDevice = setup.devices.length - 1; // кол-во устройств
-	console.log("countDevice = " + (countDevice + 1));
+	countDevice = setup.devices.length; // кол-во устройств
+	console.log("countDevice = " + (countDevice));
 	
-	for (let i = 0; i <= countDevice; i++) {
+	for (let i = 0; i < countDevice; i++) {
 		for(let key in setup.devices[i]){
 			devices.push({name : key, 
 					addr: setup.devices[i][key], 
