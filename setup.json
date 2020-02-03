@@ -1,0 +1,13 @@
+{
+    "port": "/dev/ttyRS485-1",
+    "rate": 9600,
+    "mqtt": "mqtt://127.0.0.1:1883",
+	"qos": 0,
+    "timer_read_states": 500,
+	"timer_write_port": 100,
+	"devices": [
+		{"R8V11_0": 0},
+		{"R8V11_1": 1},
+		{"R8V11_2": 2}
+	]
+}

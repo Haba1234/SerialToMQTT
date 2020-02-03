@@ -1,0 +1,36 @@
+{
+  "name": "SerialToMQTT",
+  "version": "1.0.0",
+  "keywords": [
+    "serial",
+    "usb",
+    "port",
+    "mqtt",
+    "broker",
+    "gateway",
+    "topic",
+    "mosquitto",
+    "iot",
+    "nodejs"
+  ],
+  "description": "NodeJS serial to MQTT, MQTT to serial bidirectional gateway",
+  "main": "index.js",
+  "license": "MIT",
+  "author": "Haba1234",
+  "email": "b_roman@inbox.ru",
+  "contributors": [
+    "Haba1234"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fabvalaaah/SerialMQTTGatewayJS.git"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "@serialport/parser-inter-byte-timeout": "^8.0.6",
+    "mqtt": "^3.0.0",
+    "serialport": "^7.1.5"
+  }
+}
