@@ -53,6 +53,7 @@ WantedBy=multi-user.target
 service serialtomqtt start
 service serialtomqtt stop
 service serialtomqtt restart
+service serialtomqtt status
 ```
 ## Настройка Wiren Board 6
 ```
