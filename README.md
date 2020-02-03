@@ -6,10 +6,14 @@
 Разрабатывался для передачи данных в Wiren Board 6, но так же будет нормально работать с любым другим MQTT брокером.
 
 ## Установка
-`git clone https://github.com/haba1234/SerialToMQTT.git /opt/SerialToMQTT`
-`sudo apt-get install build-essential`
-`cd /opt/SerialToMQTT`
-`npm install`
+
+```
+sudo apt-get install build-essential
+git clone https://github.com/haba1234/SerialToMQTT.git /opt/SerialToMQTT
+cd /opt/SerialToMQTT
+npm install
+
+```
 
 ## Настройка
 Выставить настройки в "setup.json".
@@ -45,10 +49,11 @@ WantedBy=multi-user.target
 `systemctl enable serialtomqtt.service`
 
 После этого можно управлять командами:
-`service serialtomqtt start`
-`service serialtomqtt stop`
-`service serialtomqtt restart`
-
+```
+service serialtomqtt start
+service serialtomqtt stop
+service serialtomqtt restart
+```
 ## Настройка Wiren Board 6
 ```
 defineVirtualDevice("R8V11_0", {
