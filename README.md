@@ -38,6 +38,7 @@ After=network-online.target
 [Service]
 Restart=always
 WorkingDirectory=/opt/SerialToMQTT/
+ExecStartPre=/bin/sleep 10
 ExecStart=/usr/bin/node /opt/SerialToMQTT/index.js
 User=root
 
