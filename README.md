@@ -1,5 +1,5 @@
 # SerialToMQTT
-Шлюз для обмена данными с релейным блоком Shturman Light версии R9V11.
+Шлюз для обмена данными с релейным блоком Shturman Light версии R8V11. Работает с Wiren Board 6 и SprutHub. Интегрируется в систему умного дома от Apple и Яндекс.
 
 Работает на Node.JS v8.16.х и выше
 
@@ -13,6 +13,12 @@ git clone https://github.com/haba1234/SerialToMQTT.git /opt/SerialToMQTT
 cd /opt/SerialToMQTT
 npm install
 
+```
+
+## Установка шаблона в SprutHub
+
+```
+cp -f R8V12.json mnt/data/makesimple/.SprutHub/data/Templates/WirenBoard/Custom/
 ```
 
 ## Настройка
