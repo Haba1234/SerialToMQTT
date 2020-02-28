@@ -18,7 +18,7 @@ npm install
 ## Установка шаблона в SprutHub
 
 ```
-cp -f R8V12.json mnt/data/makesimple/.SprutHub/data/Templates/WirenBoard/Custom/
+cp -f R8V11.json mnt/data/makesimple/.SprutHub/data/Templates/WirenBoard/Custom/
 ```
 
 ## Настройка
